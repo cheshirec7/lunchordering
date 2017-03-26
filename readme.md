@@ -25,6 +25,6 @@ This project was created to help a private K-8 school manage their lunch program
 [Laravel](https://lod.erictotten.info/)
 [Angular/Lumen](https://lod-m.erictotten.info/)
 
-####Logins:
+### Logins:
 * demoadmin@erictotten.info (pwd: secret) (Administrator)
 * demo@erictotten.info (pwd: secret)
