@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+<FilesMatch "\.(jpeg|jpg|gif|ico|css|js|png)$">
+Header unset Etag
+FileETag none
+Header set Cache-control "max-age=2592000"
+ExpiresDefault "access plus 10 years"
+</FilesMatch>
+
+<FilesMatch "\.(html|htm)$">
+Header unset Etag
+FileETag none
+Header set Cache-control "max-age=600"
+Header unset Last-Modified
+</FilesMatch>

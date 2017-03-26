@@ -1,0 +1,7 @@
+.thepadding{
+  margin: 0 10px 10px;
+}
+
+#tblSummary td:last-of-type {
+  text-align:right;
+}

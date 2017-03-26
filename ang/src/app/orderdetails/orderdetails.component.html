@@ -1,0 +1,37 @@
+<template [ngIf]="menu && menu.menuitems">
+    <div class="detailheader">
+        <a class="provimg" target="_blank" href="{{menu.purl}}">
+            <img src="assets/img/providers/{{menu.pimage}}" alt="{{menu.pname}}">
+        </a>
+        <div id="thedate">{{menu.date}}</div>
+        <div>{{menu.fname}} {{menu.lname}}</div>
+    </div>
+    <main>
+        <form id="orderform" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+            <table class="width100">
+                <tr>
+                    <th colspan="2">Lunch Selection</th>
+                    <th width="45">&nbsp;&nbsp;Qty</th>
+                </tr>
+                <tr *ngFor="let menuitem of menu.menuitems">
+                    <td width="1">
+                        <md-checkbox [(ngModel)]="menuitem.checked" name="chk{{menuitem.id}}" (change)="updateTotalPrice(menuitem.id, false, false)">
+                        </md-checkbox>
+                    </td>
+                    <td (click)="updateTotalPrice(menuitem.id, true, false)">{{menuitem.name}}</td>
+                    <td>
+                        <input type="number" name="inp{{menuitem.id}}" min="0" max="2" [disabled]="!menuitem.checked" [(ngModel)]="menuitem.qty" (ngModelChange)="updateTotalPrice(0, false, false)" (blur)="updateTotalPrice(0, false, true)">
+                    </td>
+                </tr>
+            </table>
+
+            <div id="ordertotaltext">Order Total
+                <div id="ordertotal" class="pull-right">{{totalPrice}}</div>
+            </div>
+            <div id="lunchincludes">&ndash; {{menu.pincludes}} &ndash;</div>
+
+            <a class="cancelbutton" md-raised-button routerLink="/orders">Cancel</a>
+            <button class="pull-right" type="submit" md-raised-button color="primary" [disabled]="!f.form.valid">OK</button>
+        </form>
+    </main>
+</template>

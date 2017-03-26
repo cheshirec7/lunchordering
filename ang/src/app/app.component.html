@@ -1,0 +1,33 @@
+<md-toolbar color="primary">CCA Lunch Ordering<span class="app-toolbar-filler"></span>
+    <button md-icon-button [mdMenuTriggerFor]="mainMenu" aria-label="Open main menu">
+    <md-icon>menu</md-icon>
+  </button>
+</md-toolbar>
+<md-menu #mainMenu="mdMenu">
+    <a md-menu-item [ngClass]="{'selected': item.selected }" *ngFor="let item of menuItems" [routerLink]=[item.url] [disabled]="item.disabled">
+        <md-icon>{{ item.icon }}</md-icon>
+        {{ item.text }}
+    </a>
+</md-menu>
+<div class="site-loader-cover" *ngIf="loading">
+    <!--<md-progress-spinner mode="indeterminate" color="accent"></md-progress-spinner>-->
+    <div class="ball-spin-fade-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<div class="app-content">
+    <simple-notifications [options]="notifyOptions"></simple-notifications>
+    <router-outlet></router-outlet>
+    <!--<pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>-->
+</div>
+<!--<footer>-->
+<!--&copy; 2016 <a target="_blank" [href]="url">Chandler Christian Academy</a>-->
+<!--</footer>-->
+<!--<pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>-->

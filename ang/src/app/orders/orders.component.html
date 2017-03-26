@@ -1,0 +1,38 @@
+<div class="pgtitle">
+  <button class="btnleft" md-mini-fab (click)="prev()">
+    <md-icon>chevron_left</md-icon>
+  </button>
+  <div class="titletext">
+    <div class="ordersfor">Orders for the week of</div>
+    <div [@visibilityChanged]="visibilityChanged" class="curperiod">{{dateRange}}</div>
+  </div>
+  <button class="btnright" md-mini-fab (click)="next()">
+    <md-icon>chevron_right</md-icon>
+  </button>
+</div>
+
+<md-tab-group>
+  <md-tab *ngFor="let order of orders " label="{{order.name}} ">
+    <div *ngFor="let detail of order.details ">
+      <md-card [ngClass]="{'today': detail.today }">
+        <div class="thedate ">{{detail.date}}<span class="todaytext" *ngIf="detail.today"> (Today)</span></div>
+        <div class="row ">
+          <img *ngIf="detail.img " class="provider " src="assets/img/providers/{{detail.img}} ">
+          <div *ngIf="!detail.img " class="nls ">No Lunches Scheduled</div>
+          <div class="width100 ">
+            <p *ngIf="detail.nleReason " class="nle ">{{detail.nleReason}}</p>
+            <p *ngIf="detail.nleDesc " class="nle ">{{detail.nleDesc}}</p>
+            <p *ngIf="detail.lunchText ">{{detail.lunchText}}</p>
+            <p *ngIf="detail.nlo " class="nlo ">NO LUNCH ORDERED</p>
+            <p *ngIf="detail.addltxt " class="addl ">{{detail.addltxt}}</p>
+            <p *ngIf="detail.extcare " class="extcare ">{{detail.extcare}}</p>
+          </div>
+          <a *ngIf="detail.editable " class="addeditbutton " md-icon-button routerLink="/orderdetails/{{detail.timestamp}}/{{detail.userid}} ">
+            <md-icon *ngIf="detail.lunchText " class="edit ">edit</md-icon>
+            <md-icon *ngIf="!detail.lunchText " class="add ">add_circle_outline</md-icon>
+          </a>
+        </div>
+      </md-card>
+    </div>
+  </md-tab>
+</md-tab-group>

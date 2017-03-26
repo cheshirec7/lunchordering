@@ -1,0 +1,22 @@
+<div class="pagetitle">Login</div>
+<form (ngSubmit)="login(f.value, f.valid)" #f="ngForm" novalidate>
+
+  <md-input-container class="width100">
+    <input mdInput placeholder="Email" type="email" name="email" [(ngModel)]="user.email" #email="ngModel" required>
+  </md-input-container>
+
+  <div class="help-block" [hidden]="email.valid || (email.pristine && !f.submitted)">
+    Email is required
+  </div>
+  <div>&nbsp;</div>
+
+  <md-input-container class="width100">
+    <input mdInput placeholder="Password" type="password" name="password" [(ngModel)]="user.password" #password="ngModel" required>
+  </md-input-container>
+
+  <div class="help-block" [hidden]="password.valid || (password.pristine && !f.submitted)">
+    Password is required
+  </div>
+  <a class="forgot" href="http://cca.lunchordering.com/password/reset" target="_blank">Forgot your password?</a>
+  <button [disabled]="loading" md-raised-button color="primary">Login</button>
+</form>

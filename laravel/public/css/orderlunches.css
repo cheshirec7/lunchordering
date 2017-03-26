@@ -1,0 +1,422 @@
+.orderlunches {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.calheader table, #caroLunches table {
+    border-spacing: 0;
+}
+
+.calheader td {
+    padding: 4px 3px 3px;
+    vertical-align: middle;
+}
+
+.calheader {
+    background-color: #000;
+    width: 100%;
+}
+
+.navbtn {
+    width: 100%;
+    max-width: 57px;
+    opacity: 0.95;
+}
+
+.navbtn:hover {
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+#perioddesc {
+    color: #5790EB;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+#orderlunchfor {
+    color: #FFEE00;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    width: 50px;
+}
+
+.lunchestable {
+    width: 100%;
+    background-color: #fff;
+}
+
+.lunchestable .providers img {
+    width: 100%;
+    max-width: 115px;
+    padding: 8px;
+}
+
+.lunchestable .providers th {
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, #000000 0%, #555555 100%);
+    background-repeat: repeat-x;
+    border: 1px solid #333333;
+    text-align: center;
+}
+
+.lunchestable .lunchdates th {
+    background-color: #427CD8;
+    background-image: linear-gradient(to bottom, #93CAFF 0%, #003DB8 100%);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-shadow: 1px 1px #222222;
+    text-align: center;
+    border: 1px solid #4285F4;
+}
+
+.lunchestable .lunchdates th.usercol {
+    background-color: #777777;
+    background-image: linear-gradient(to bottom, #B4B4B4 0%, #696969 100%);
+    background-repeat: repeat-x;
+    border-left: 1px solid #444;
+    border-bottom: 1px solid #999;
+}
+
+.lunchestable .lunchdates th.today {
+    background-color: #E4E460;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#FFFFCC), to(#CFCF0C));
+    background-image: -webkit-linear-gradient(top, #FFFFCC, 0%, #CFCF0C, 100%);
+    background-image: -moz-linear-gradient(top, #FFFFCC 0%, #CFCF0C 100%);
+    background-image: linear-gradient(to bottom, #FFFFCC 0%, #CFCF0C 100%);
+    background-repeat: repeat-x;
+    color: #000066;
+    text-shadow: 1px 1px #EEEEEE;
+    border-bottom: 1px solid #b9b921;
+    border-left: 1px solid #b9b921;
+}
+
+button.clickablearea {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%
+}
+
+.todaytext {
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+#amountduetext {
+    color: #FF9900;
+    text-align: right;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+}
+
+#amountdue {
+    color: #ff9900;
+    font-size: 1.5rem;
+}
+
+#accountimg {
+    width: 40px;
+}
+
+.lunchestable .fa {
+    font-size: 4rem;
+    color: #008800;
+    margin-bottom: 10px;
+}
+
+.lunchestable .fa.fa-edit {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.lunchestable div {
+    margin: 5px 0;
+}
+
+.lunchestable .ordertext {
+    margin: 0 0 10px;
+}
+
+.lunchestable td {
+    text-align: center;
+    line-height: 1.2em;
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+}
+
+.lunchestable .today {
+    background-color: #FFFFCC;
+}
+
+.lunchestable td.editable:hover {
+    background-color: #dde6f5;
+    cursor: pointer;
+}
+
+.lunchestable .userrow {
+    background-color: #fafafa;
+    text-align: center;
+    display: none;
+    font-variant: small-caps;
+}
+
+.lunchestable .usercol {
+    background-color: #fafafa;
+    font-variant: small-caps;
+    font-family: georgia, serif;
+    font-size: 1rem;
+}
+
+.lunchestable .emptyrow {
+    background-color: #fafafa;
+    height: 20px;
+}
+
+.lunchestable .nlo {
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.lunchestable .nlereason,
+.lunchestable .nledesc {
+    color: #4285F4;
+
+}
+
+.lunchestable .editable .lunchtext,
+.lunchestable .editable .ordertext {
+    color: #008800;
+}
+
+.lunchestable .extcare {
+    color: #990000;
+}
+
+.lunchestable .past {
+    color: #666;
+}
+
+/*!*** modal ****!*/
+#modalOrderLunch .modal-dialog {
+    max-width: 500px;
+    margin: 10px;
+}
+
+#modalOrderLunch .modal-content {
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#modalOrderLunch td {
+    padding: 0;
+}
+
+#modalOrderLunch .modal-header {
+    background-color: #fafafa;
+    background-image: linear-gradient(to bottom, #ddd, #fcfcfc);
+    background-repeat: repeat-x;
+    font-variant: normal;
+    padding: 0;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#modalOrderLunch #lunchorder {
+    background-color: #006DCC;
+    background-image: linear-gradient(to bottom, #8ABAF2, #0B61D5);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #333333;
+    color: #FFFFFF;
+    padding: 3px 3px 3px 10px;
+    font-weight: normal;
+}
+
+#modalOrderLunch #orderee,
+#modalOrderLunch #lunchdate {
+    padding: 3px 3px 3px 10px;
+    font-weight: normal;
+    color: #000;
+}
+
+#modalOrderLunch .provimg {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+}
+
+#modalOrderLunch .provimg img {
+    max-width: 180px;
+    max-height: 62px;
+}
+
+#modalOrderLunch .modal-body {
+    padding: 5px 8px 5px 10px;
+    overflow: auto;
+}
+
+#modalOrderLunch .modal-body [type=checkbox] + label {
+    margin: 0.1rem 0;
+    padding-left: 26px;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+#modalOrderLunch .modal-body input[type=number] {
+    height: 21px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    text-align: center;
+    width: 35px;
+}
+
+#modalOrderLunch .modal-body table td + td {
+    text-align: center;
+}
+
+#modalOrderLunch .modal-body input[type=number]:disabled {
+    background-color: #eee;
+}
+
+#modalOrderLunch .modal-footer {
+    padding: 5px;
+    background-color: #fafafa;
+}
+
+#modalOrderLunch #ordertotaltext {
+    color: #ff6600;
+    border-top: 1px dashed #eee;
+    margin: 5px 3px 1px;
+    padding-top: 1px;
+}
+
+#modalOrderLunch #lunchincludes {
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    color: #4285F4;
+    padding: 5px 0 10px;
+    line-height: 17px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#modalOrderLunch button {
+    width: 120px;
+}
+
+@media (min-width: 540px) {
+    #modalOrderLunch .modal-dialog {
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .calheader {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .fixed-sn main {
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 0;
+    }
+
+    .container, .container-fluid {
+        padding: 0;
+    }
+
+    /*.fixed-sn main, .hidden-sn main {*/
+    /*padding-top: 51px;*/
+    /*}*/
+    .orderlunches {
+        box-shadow: none;
+    }
+}
+
+/*@media (max-width: 767px) {*/
+/*.fixed-sn main, .hidden-sn main {*/
+/*padding-top: 43px;*/
+/*}*/
+/*}*/
+
+@media (max-width: 480px) {
+    .lunchestable td, .lunchestable .nlo {
+        font-size: 0.7rem;
+    }
+
+    .lunchestable .lunchdates th {
+        font-size: 0.6rem;
+    }
+
+    #amountduetext {
+        font-size: 0.6rem;
+    }
+
+    #amountdue {
+        font-size: 1.2rem;
+    }
+
+    #accountimg {
+        width: 30px;
+    }
+
+    #perioddesc {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .lunchestable .usercol {
+        display: none;
+    }
+
+    .lunchestable .userrow {
+        display: table-cell;
+    }
+
+    .lunchestable .userrow .username {
+        margin: 1px auto;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+
+    .navbtn {
+        max-width: 48px;
+    }
+
+    #orderlunchfor, #accountnames {
+        display: none;
+    }
+
+    .lunchestable div {
+        margin: 5px 0;
+    }
+
+    .lunchestable td {
+        height: 100px;
+    }
+
+    .lunchestable .fa {
+        font-size: 2rem;
+    }
+
+    .lunchestable .fa.fa-edit {
+        font-size: 1rem;
+    }
+}
+
+/*@media (max-width: 360px) {*/
+/*.fixed-sn main, .hidden-sn main {*/
+/*padding-top: 40px;*/
+/*}*/
+/*}*/

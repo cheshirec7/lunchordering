@@ -1,0 +1,51 @@
+.card .form-header {
+    display: flex;
+    justify-content: center;
+}
+
+#acctimg {
+    height: 30px;
+    margin-right: 10px;
+}
+
+th:last-child,
+td:last-child {
+    text-align: right;
+}
+
+.paylayout {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ppbtn {
+    height: 44px;
+    width: 228px;
+}
+
+.paylayout .payamount {
+    width: 100px;
+}
+
+.paylayout .payamount input {
+    text-align: right;
+}
+
+.paylayout .md-form, .paylayout .md-form .btn {
+    margin-bottom: 0;
+}
+
+.card .form-header h3 {
+    padding: 0;
+}
+
+.paynow {
+    background-color: #FCF8E3;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.curbal {
+    background-color: #fafafa;
+    font-weight: bold;
+}

@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: #000;
+    font-size: 11pt;
+    line-height: 13pt;
+}
+
+h2, h3, h4, h5, h6, p, input {
+    margin: 10px 0;
+}
+
+.logoimg {
+    height: 25px;
+    margin: 10px;
+}
+
+#thereport {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.reportbody {
+    margin: 15px 0;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+td, th {
+    padding: 2px;
+}
+
+@media print {
+    body {
+        font-size: 9pt;
+        line-height: 11pt;
+    }
+
+    .logoimg {
+        margin-top: 0
+    }
+
+    #thereport {
+        padding: 0;
+    }
+
+    input, .btn {
+        display: none !important;
+    }
+
+    .borderbottom {
+        border-bottom: 1px solid #ccc;
+        padding: 3px;
+    }
+
+    td, th {
+        padding: 0;
+    }
+}

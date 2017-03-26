@@ -1,0 +1,170 @@
+.pgtitle {
+    background-color: #b8171c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: -webkit-linear-gradient(top, #b8171c 0, #6c0e11 100%);
+    background-image: -o-linear-gradient(top, #b8171c 0, #6c0e11 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#b8171c), to(#6c0e11));
+    background-image: linear-gradient(to bottom, #b8171c 0, #6c0e11 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffb8171c', endColorstr='#ff6c0e11', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+}
+
+.pgtitle button.btnright,
+.pgtitle button.btnleft {
+    margin: 0 12px 10px;
+    color: black;
+}
+
+.titletext {
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ordersfor {
+    font-size: 10px;
+    line-height: 18px;
+    font-style: italic;
+    color: #ccc;
+}
+
+.curperiod {
+    text-shadow: 1px 1px 1px #666;
+    margin-bottom: 13px;
+    color: #aecdff;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    width: 100%;
+}
+
+.row p {
+    margin: 3px 10px 0 0;
+    line-height: 15px;
+}
+
+.row p:first-of-type {
+    margin-top: 0;
+}
+
+.row [md-button],
+.row [md-fab],
+.row [md-icon-button],
+.row [md-mini-fab],
+.row [md-raised-button] {
+    min-width: 0;
+}
+
+img.provider {
+    width: 65px;
+    margin: 0 15px 0 0;
+}
+
+.thedate {
+    font-size: 11px;
+    padding: 0 0 5px;
+    color: #5790EB;
+}
+
+.today {
+    background-color: #ffffee;
+}
+
+
+/*.todaytext {
+  background-color: yellow;
+  float:right;
+  font-size: 11px;
+  color:#5790EB;
+}*/
+
+
+/*no lunch scheduled */
+
+.nls {
+    width: 270px;
+    margin: 5px 0 10px;
+}
+
+.extcare {
+    color: orangered;
+}
+
+
+/* no lunch ordered */
+
+.nlo {
+    color: #ccc;
+}
+
+
+/* no lunch exception */
+
+.nle {
+    color: #4285F4
+}
+
+.addl {
+    color: green;
+}
+
+.edit {
+    color: #9C3033;
+}
+
+.past p {
+    color: #777 !important
+}
+
+.past img.provider,
+.past .thedate {
+    opacity: 0.7;
+}
+
+.addtext {
+    color: #CFDBC5;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.add {
+    text-align: center;
+    color: green;
+}
+
+.add.material-icons {
+    text-align: center;
+    color: green;
+}
+
+.addbtn {
+    color: green;
+    float: right;
+    margin-right: 20px;
+    opacity: 0.7;
+}
+
+.addeditbutton {
+    margin-top: -7px;
+}
+
+.redblock {
+    position: absolute;
+    height: 36px;
+    top: 106px;
+    background-color: #b8171c;
+    width: 100%;
+}
+
+@media (max-width: 960px) and (orientation: landscape) {
+    .redblock {
+        top: 98px;
+    }
+}

@@ -1,0 +1,32 @@
+<template [ngIf]="details">
+<div class="pagetitle">My Account</div>
+<div class="thepadding">
+  <table id="tblSummary" class="table table-bordered table-sm">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Summary</th>
+        <th width="50">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr>
+        <td>{{ totalOrders }} Orders Placed</td>
+        <td>${{ (totalOfOrders / 100).toFixed(2) }}</td>
+      </tr>
+      <tr>
+        <td>{{ details.payment_agg.payment_count }} Payments Received</td>
+        <td>${{ (details.payment_agg.credit_amt / 100).toFixed(2) }}</td>
+      </tr>
+      <tr>
+        <td>PayPal Fees Paid</td>
+        <td>${{ (details.fees.fees / 100).toFixed(2) }}</td>
+      </tr>
+
+      <tr class="{{ curBalClass }}">
+        <td>Current Balance</td>
+        <td>{{ curBal }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</template>
