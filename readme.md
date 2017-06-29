@@ -22,7 +22,7 @@ This project was created to help a private K-8 school manage their lunch program
 * Reports: Lunch Orders by Provider or User, Account Balances, Account Details
 
 ## Live Demos
-[Laravel](https://lod.erictotten.net/) / [Angular/Lumen](https://lod-m.erictotten.net/)
+[Laravel](http://lod.erictotten.net/) / [Angular/Lumen](http://lod-m.erictotten.net/)
 
 ### Logins:
 * demoadmin@erictotten.net (pwd: secret) (Administrator)
