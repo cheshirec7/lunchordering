@@ -1,27 +1,29 @@
 School Lunch Ordering System
 ============================
 
-### Components
-* **[Laravel 5.4 PHP framework](http://laravel.com/)** 
-* **[jQuery DataTables API for Laravel 4|5](https://github.com/yajra/laravel-datatables)**
-* **[reCAPTCHA Validator for Laravel 5](https://github.com/greggilbert/recaptcha)**
-* **[jQuery 3.3.1]( http://jquery.com/)**
-* **[Bootstrap 4.0 alpha6](https://v4-alpha.getbootstrap.com/)**
-* **[MDB (Material Design for Bootstrap) 4.3.1](http://mdbootstrap.com/)**
-* **[Datetime Picker for Bootstrap](http://eonasdan.github.io/bootstrap-datetimepicker/)**
-* **[Bootstrap Dialog](https://github.com/nakupanda/bootstrap3-dialog)**
-* **[DataTables 1.10.13](http://www.datatables.net/)**
-* **[Spin.js](http://fgnass.github.io/spin.js/)**
-* **[Font Awesome 4.7.0](http://fontawesome.io/)**
-* **[Moment.js 2.18.0](http://momentjs.com/)**
-* **[FPDF](http://www.fpdf.org/) (for Avery label reports)**
-* **[Bower](https://bower.io/)**
-* **[Gulp](http://gulpjs.com/)**
+This project was created to help a private K-8 school manage their lunch program.  Lunches are ordered and delivered from local restaurants daily. Highly reliable and in use for over 6 years. Began life as a Flash / Actionscript project.
 
+### End User Features
+* View and order lunches by account for an entire week.  Users of all ages can order a lunch in three clicks.
+* Upcoming Lunches report
+* My Account - Summary, Payments, Lunches Ordered
+* PayPal integration
+* Facebook login integration
 
-## Live Demo
-See a [live demonstration](https://lod.erictotten.info/).
+### Administrative Features
+* Grade Maintenance
+* Provider Maintenance
+* Menu Item Maintenance
+* Account Maintenance
+* Schedule Lunches
+* Order Lunches for all users
+* Receive Payments
+* Lunch Order Maintenance
+* Reports: Lunch Orders by Provider or User, Account Balances, Account Details
 
-#####Logins:
-* demoadmin@erictotten.info (pwd: secret)
-* demo@erictotten.info (pwd: secret)
+## Live Demos
+[Laravel](http://lod.erictotten.net/) / [Angular/Lumen](http://lod-m.erictotten.net/)
+
+### Logins:
+* demoadmin@erictotten.net (pwd: secret) (Administrator)
+* demo@erictotten.net (pwd: secret)

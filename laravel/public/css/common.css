@@ -427,6 +427,11 @@ div.dataTables_wrapper div.dataTables_filter input {
     display: block;
 }
 
+.dataTables_wrapper.container-fluid.dt-bootstrap4 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 /* end datatables */
 
 /* modals */
@@ -441,6 +446,10 @@ div.dataTables_wrapper div.dataTables_filter input {
     color: #ffffff;
     font-variant: small-caps;
     display: block;
+}
+
+.modal-content {
+    border: none;
 }
 
 .modal-content .close {

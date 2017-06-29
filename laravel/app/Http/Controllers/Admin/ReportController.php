@@ -76,7 +76,7 @@ class ReportController extends Controller
                                 OrderRepository $orders,
                                 OrderDetailRepository $orderdetails,
                                 ProviderRepository $providers,
-    PaymentRepository $payments,
+                                PaymentRepository $payments,
                                 FPDF $fpdf)
     {
         $this->accounts = $accounts;

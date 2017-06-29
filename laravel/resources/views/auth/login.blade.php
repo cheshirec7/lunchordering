@@ -35,18 +35,18 @@
                 <div class="card-block">
                     <h3 class="myformheader"><i class="fa fa-lock"></i> Login</h3>
                     @include('partials.notify')
-                    <div class="connectwith">Connect with</div>
-                    <div class="social_buttons">
-                        <form role="form" method="GET" action="{{ url('/auth/fb') }}">
-                            <input style="max-height: 40px;" type="image" src="{{ asset('img/facebook-login.png') }}"
-                                   alt="Submit"/>
-                        </form>
-                    </div>
-                    <div class="outer_or">
-                        <hr/>
-                        <div class="inner_or">or</div>
-                    </div>
-
+                    {{--<div class="connectwith">Connect with</div>--}}
+                    {{--<div class="social_buttons">--}}
+                        {{--<form role="form" method="GET" action="{{ url('/auth/fb') }}">--}}
+                            {{--<input style="max-height: 40px;" type="image" src="{{ asset('img/facebook-login.png') }}"--}}
+                                   {{--alt="Submit"/>--}}
+                        {{--</form>--}}
+                    {{--</div>--}}
+                    {{--<div class="outer_or">--}}
+                        {{--<hr/>--}}
+                        {{--<div class="inner_or">or</div>--}}
+                    {{--</div>--}}
+<br />
                     <form role="form" method="POST" action="{{ url('/login') }}">
                         {{ csrf_field() }}
                         <div class="md-form">
